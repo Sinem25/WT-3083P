@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyJS-Formlar</title>
+</head>
+<body>
+    <form>
+        <div>
+         <label for="first_name">Name:</label>
+         <input type="text" id="first_name" name="first_name" minlength="2" maxlength="24" required>
+        </div>
+        <br>
+        <div>
+            <label for="second_name">Surname:</label>
+            <input type="text" id="second_name" name="second_name" minlength="2" maxlength="24">
+        </div>
+        <br>
+        <div>
+            <label for="e-mail">Email:</label>
+            <input type="email" id="e-mail" name="e-mail">
+        </div>
+        <br>
+        <div>
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" name="weight" min="25" max="30" step="0.5">
+        </div>
+        <br>
+        <div>
+            <label for="phone_number">Phone Number:</label>
+            <input type="tel" id="phone_number" name="phone_number">
+        </div>
+        <br>
+        <div>
+            <label for="birth_date">Birthday:</label>
+            <input type="date" id="birth_date" name="birth_date" min="2006-01-03" max="2009-01-15">
+        </div>
+        <br>
+        <div>
+            <label for="website">Websiteniz:</label>
+            <input type="url" id="website" name="website">
+        </div>
+        <br>
+        <div>
+            <label for="favorite_color">Your Favorite Color:</label>
+            <input type="color"  id="favorite_color" name="color">
+        </div>
+        <br>
+        <div>
+            <label for="profile_picture">Your Profile Picture:</label>
+            <input type="file" id="profile_picture" name="profile_picture" accept="image/png, image/gif, image/jpeg">
+        </div>
+        <br>
+        <div>
+            <label for="item">What do you want to buy?</label>
+            <input type="search" id="item" list="data_list" name="item">
+            <datalist id="data_list">
+                <option value="Ayakkabı"></option>
+                <option value="Tişört"></option>
+                <option value="Pantolon"></option>
+                <option value="Terlik"></option>
+            </datalist>
+        </div>
+        <br>
+        <div>
+            <label for="password">Your Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <br>
+        <div>
+            <label for="password_confirm">Your Password:</label>
+            <input type="password" id="password_confirm" name="password_confirm">
+        </div>
+        <br>
+        <div>
+            <label for="favorite_fruit">Your Favorite Fruit</label>
+            <select id="favorite_fruit" name="favorite_fruit" multiple>
+                <option value="apple">Apple</option select>
+                <option value="banana">Banana</option>
+                <option value="strawberry">Strawberry</option>
+                <option>Onion</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Your Hobbies</legend>
+            <input type="checkbox" id="hobbies_coding" checked name="hobbies" value="coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="hobbies_music" name="hobbies" value="music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="hobbies_reading" name="hobbies" value="reading" >
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="hobbies_travelling" name="hobbies" value="travelling" >
+            <label for="travelling">Travelling</label>
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="male" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="unknown" name="male" value="unknown">
+            <label for="unknown">Unknown</label>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
